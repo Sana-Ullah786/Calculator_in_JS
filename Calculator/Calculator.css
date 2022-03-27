@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* CSS for header of webpage */
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/Background.png);
+}
+/* CSS for table structure of calculator */
+table {
+  border: none;
+  border-radius: 6%;
+  box-shadow: darkgrey;
+  width: 400px;
+  height: 500px;
+  background: rgb(195, 105, 104);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 5%;
+  left: 36%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  box-shadow: 20px 20px 40px grey;
+}
+table tr td {
+  border: 2px solid black;
+}
+.rows {
+  height: 60px;
+}
+.rows td {
+  width: 60px;
+  height: 60px;
+
+  border: none;
+}
+/* CSS for buttons of calculator */
+.rows input {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 6px 6px 18px rgb(180, 79, 79);
+  background: rgb(195, 105, 104);
+  color: white;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+/* CSS for output console of calculator */
+.output td {
+  height: 200px;
+  border: none;
+  font-family: "Merriweather", serif;
+  font-size: 100px;
+}
+.C input {
+  background: white;
+  color: black;
+}
+.output input {
+  background: rgb(195, 105, 104);
+  height: 50px;
+  width: 300px;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  border: none;
+}
+/* CSS for showing the expression on output screen */
+#exp {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 5px;
+  color: white;
+}

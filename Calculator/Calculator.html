@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Calculator.css" />
+    <link
+      href="https://www.dafontfree.net/embed/cGxheWZhaXItZGlzcGxheS1pdGFsaWMmZGF0YS80Ni9wLzU5MTIyL1BsYXlmYWlyRGlzcGxheS1JdGFsaWMudHRm"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="./Calculator.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="header">
+      <table cellspacing="15">
+        <tr class="output">
+          <td colspan="5">
+            <input
+              type="text"
+              value=""
+              id="exp"
+              style="font-family: 'playfair-display-italic', sans-serif"
+              readonly
+            /><br />
+            <input
+              type="text"
+              value=""
+              id="result"
+              style="
+                font-size: 70px;
+                height: 80px;
+                margin-bottom: 50px;
+                text-align: center;
+                color: white;
+              "
+              readonly
+            />
+          </td>
+        </tr>
+        <tr class="rows">
+          <td>
+            <input type="button" value="MC" id="MC" onclick="getValue('MC')" />
+          </td>
+          <td>
+            <input type="button" value="0" id="0" onclick="getValue('0')" />
+          </td>
+          <td>
+            <input type="button" value="1" id="1" onclick="getValue('1')" />
+          </td>
+          <td>
+            <input type="button" value="2" id="2" onclick="getValue('2')" />
+          </td>
+          <td>
+            <input type="button" value="+" id="+" onclick="getValue('+')" />
+          </td>
+        </tr>
+        <tr class="rows">
+          <td>
+            <input type="button" value="MS" id="MS" onclick="getValue('MS')" />
+          </td>
+          <td>
+            <input type="button" value="3" id="3" onclick="getValue('3')" />
+          </td>
+          <td>
+            <input type="button" value="4" id="4" onclick="getValue('4')" />
+          </td>
+          <td>
+            <input type="button" value="5" id="5" onclick="getValue('5')" />
+          </td>
+          <td>
+            <input type="button" value="-" id="-" onclick="getValue('-')" />
+          </td>
+        </tr>
+        <tr class="rows">
+          <td>
+            <input type="button" value="MR" id="MR" onclick="getValue('MR')" />
+          </td>
+          <td>
+            <input type="button" value="6" id="6" onclick="getValue('6')" />
+          </td>
+          <td>
+            <input type="button" value="7" id="7" onclick="getValue('7')" />
+          </td>
+          <td>
+            <input type="button" value="8" id="8" onclick="getValue('8')" />
+          </td>
+          <td>
+            <input type="button" value="*" id="*" onclick="getValue('*')" />
+          </td>
+        </tr>
+        <tr class="rows">
+          <td>
+            <input type="button" value="M+" id="M+" onclick="getValue('M+')" />
+          </td>
+          <td>
+            <input type="button" value="9" id="9" onclick="getValue('9')" />
+          </td>
+          <td>
+            <input type="button" value="±" id="±" onclick="getValue('±')" />
+          </td>
+          <td>
+            <input type="button" value="=" id="=" onclick="getValue('=')" />
+          </td>
+          <td>
+            <input type="button" value="/" id="/" onclick="getValue('/')" />
+          </td>
+        </tr>
+        <tr class="rows">
+          <td>
+            <input
+              type="button"
+              value="1/x"
+              id="1/x"
+              onclick="getValue('1/x')"
+            />
+          </td>
+          <td>
+            <input type="button" value="." id="." onclick="getValue('.')" />
+          </td>
+          <td>
+            <input type="button" value="x2" id="x2" onclick="getValue('x2')" />
+          </td>
+          <td>
+            <input type="button" value="√" id="√" onclick="getValue('√')" />
+          </td>
+          <td class="C">
+            <input type="button" value="C" id="C" onclick="getValue('C')" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
